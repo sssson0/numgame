@@ -1,0 +1,52 @@
+
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMSZgJrCTyC7olddS5IYhXFFQNWWKHY5VSVA&s");
+    /* background-repeat: no-repeat; */
+    
+}
+.title{
+    font-size: 60px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#result-area{
+    color: black;
+    font-size: 20px;
+    
+}
+#chance-area{
+    color: black;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input-button{
+    display: flex;
+
+}
+.input-button *{
+    margin-right: 10px;
+}
+
+#user-input{
+    border: none;
+}
+
+#play-button,#reset-button{
+    background-color: white;
+    border: none;
+    font-weight: 600;
+}
