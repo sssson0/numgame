@@ -3,7 +3,7 @@ let playButton = document.getElementById('play-button');
 let userInput = document.getElementById('user-input');
 let resultArea = document.getElementById('result-area')
 let resetButton = document.getElementById('reset-button')
-let chances = 5; 
+let chances = 3; 
 let gameOver = false;
 let chanceArea = document.getElementById("chance-area");
 let history = [];
@@ -38,7 +38,7 @@ function play(){
     }
 
 chances --;
-chanceArea.textContent = `남은 찬스 : ${chances}번`;
+chanceArea.textContent = `남은 찬스 : ${chances}번 정답 : ${computerNum}`;
 
     if(userValue < computerNum){
         resultArea.textContent = "UP!!";
