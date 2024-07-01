@@ -38,7 +38,7 @@ function play(){
     }
 
 chances --;
-chanceArea.textContent = `남은 찬스 : ${chances}번 정답 : ${computerNum}`;
+chanceArea.textContent = `남은 찬스 : ${chances}번 `;
 
     if(userValue < computerNum){
         resultArea.textContent = "UP!!";
@@ -50,7 +50,7 @@ chanceArea.textContent = `남은 찬스 : ${chances}번 정답 : ${computerNum}`
     }
 
     history.push(userValue);
-    historyArea.textContent = `입력했던 숫자 : [${history}]`
+    historyArea.textContent = `입력했던 숫자 : [${history}] 정답 : ${computerNum}`
     console.log(history)
 
 
