@@ -7,6 +7,8 @@ let chances = 5;
 let gameOver = false;
 let chanceArea = document.getElementById("chance-area");
 let history = [];
+let historyArea = document.getElementById("history-area");
+
 
 playButton.addEventListener("click", play);
 resetButton.addEventListener("click",reset);
@@ -48,6 +50,7 @@ chanceArea.textContent = `남은 찬스 : ${chances}번`;
     }
 
     history.push(userValue);
+    historyArea.textContent = `입력했던 숫자 : [${history}]`
     console.log(history)
 
 
@@ -56,9 +59,13 @@ chanceArea.textContent = `남은 찬스 : ${chances}번`;
     }
     if(gameOver ==true){
         playButton.disabled = true
+        chanceArea.textContent = `gameover!!`;
     }
+    
 
 }
+
+
 
 function reset(){
     userInput.value = "";
