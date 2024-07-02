@@ -71,6 +71,7 @@ function reset(){
     userInput.value = "";
     pickRandomNum();
     resultArea.textContent = "결과를 확인해봐요!"
+    location.reload(true);
 
 }
 
